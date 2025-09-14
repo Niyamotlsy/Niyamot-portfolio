@@ -12,7 +12,7 @@ h2{
 p{
     color: dimgray;
 }
-.name-highlight{
+.orange-highlight{
     color: orange;
 }
 .half-width{
@@ -28,6 +28,10 @@ p{
 .top-bannar{
     background-image:url(images/top-banner.png) ;
     background-repeat: no-repeat;
+    opacity: 0;                 /* প্রথমে অদৃশ্য */
+      transform: translateY(20px); /* নিচে থেকে শুরু করবে */
+      animation: fadeInUp 2s ease-out forwards; 
+      /* 2s = সময়, forwards = শেষে stop */
 }
 section{
     height: 500px;
@@ -41,9 +45,88 @@ background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(160, 51, 144, 
     padding: 10px 50px;
     border-radius: 10px;
     color: rgb(250, 248, 248)
+    opacity: 0;                 /* প্রথমে অদৃশ্য */
+      transform: translateY(20px); /* নিচে থেকে শুরু করবে */
+      animation: fadeInUp 3s ease-out forwards; 
+      /* 2s = সময়, forwards = শেষে stop */
 }
+.hover-text {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+.hover-text:hover {
+  background-color: darkorange; /* Hover করলে ডার্ক অরেঞ্জ হবে */
+  transform: scale(1.05);       /* একটু বড় হবে */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* হালকা ছায়া */
+}
+.link-button{
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #c6b0d4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(160, 51, 144, 1) 12%, rgba(204, 41, 90, 1) 30%, rgba(217, 38, 74, 1) 35%, rgba(234, 34, 53, 1) 42%, rgba(253, 29, 29, 1) 50%, rgba(253, 77, 42, 1) 66%, rgba(253, 114, 52, 1) 79%, rgba(252, 159, 64, 1) 94%, rgba(252, 176, 69, 1) 100%);
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: rgb(250, 248, 248)
+
+}
+ p {
+      opacity: 0;                 /* প্রথমে অদৃশ্য */
+      transform: translateY(20px); /* নিচে থেকে শুরু করবে */
+      animation: fadeInUp 2s ease-out forwards; 
+      /* 2s = সময়, forwards = শেষে stop */
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
 .dream-area{
     background-image: url(/images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+    opacity: 0;                 /* প্রথমে অদৃশ্য */
+      transform: translateY(20px); /* নিচে থেকে শুরু করবে */
+      animation: fadeInUp 2s ease-out forwards; 
+      /* 2s = সময়, forwards = শেষে stop */
+}
+.single-experience{
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 10px;
+    height: 80%;
+}
+.experience-area{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: 0;                 /* প্রথমে অদৃশ্য */
+      transform: translateY(20px); /* নিচে থেকে শুরু করবে */
+      animation: fadeInUp 2s ease-out forwards; 
+      /* 2s = সময়, forwards = শেষে stop */
+}
+#full-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#baby-web{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, rgb(33, 33, 134),cyan);
+    border-image-slice: 1;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
 }
