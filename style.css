@@ -6,6 +6,12 @@ body{
 h1{
     font-size: 50px;
 }
+h2{
+    font-size: 45px;
+}
+p{
+    color: dimgray;
+}
 .name-highlight{
     color: orange;
 }
@@ -25,5 +31,19 @@ h1{
 }
 section{
     height: 500px;
-
+    padding-bottom: 200px;
+}
+.link-button{
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #c6b0d4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(160, 51, 144, 1) 12%, rgba(204, 41, 90, 1) 30%, rgba(217, 38, 74, 1) 35%, rgba(234, 34, 53, 1) 42%, rgba(253, 29, 29, 1) 50%, rgba(253, 77, 42, 1) 66%, rgba(253, 114, 52, 1) 79%, rgba(252, 159, 64, 1) 94%, rgba(252, 176, 69, 1) 100%);
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: rgb(250, 248, 248)
+}
+.dream-area{
+    background-image: url(/images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
